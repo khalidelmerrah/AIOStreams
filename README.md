@@ -20,7 +20,7 @@
 - [Development](#development)
 - [Credits](#credits)
 
-## Description
+## Descriptionn
 
 Combines streams from other addons into one and provides much greater customisation:
 
