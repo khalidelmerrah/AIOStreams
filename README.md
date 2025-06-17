@@ -74,6 +74,7 @@ It currently supports:
 - Torbox Addon
 - Debridio
 - Jackettio
+- Prowlarr: requires your Prowlarr URL and API key. Configure `PROWLARR_URL`, `PROWLARR_API_KEY` and optionally `DEFAULT_PROWLARR_TIMEOUT`.
 - Peerflix
 - DMM Cast
 - Orion Stremio Addon
