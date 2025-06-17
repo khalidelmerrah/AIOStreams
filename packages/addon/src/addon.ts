@@ -10,6 +10,7 @@ import {
   getOrionStreams,
   getPeerflixStreams,
   getStremioJackettStreams,
+  getProwlarrStreams,
   getTorboxStreams,
   getTorrentioStreams,
 } from '@aiostreams/wrappers';
@@ -1090,6 +1091,14 @@ export class AIOStreams {
       }
       case 'peerflix': {
         return await getPeerflixStreams(
+          this.config,
+          addon.options,
+          streamRequest,
+          addonId
+        );
+      }
+      case 'prowlarr': {
+        return await getProwlarrStreams(
           this.config,
           addon.options,
           streamRequest,

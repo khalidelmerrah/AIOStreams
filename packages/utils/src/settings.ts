@@ -206,6 +206,13 @@ export class Settings {
     ? parseInt(process.env.DEFAULT_EASYNEWS_PLUS_TIMEMOUT)
     : undefined;
 
+  public static readonly PROWLARR_URL =
+    process.env.PROWLARR_URL || 'https://prowlarr.example.com';
+  public static readonly DEFAULT_PROWLARR_TIMEOUT = process.env
+    .DEFAULT_PROWLARR_TIMEOUT
+    ? parseInt(process.env.DEFAULT_PROWLARR_TIMEOUT)
+    : undefined;
+
   public static readonly DEBRIDIO_URL =
     process.env.DEBRIDIO_URL || 'https://debridio.adobotec.com/';
   public static readonly DEFAULT_DEBRIDIO_TIMEOUT = process.env
