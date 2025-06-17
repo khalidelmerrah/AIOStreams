@@ -496,6 +496,24 @@ export const addonDetails: AddonDetail[] = [
     ],
   },
   {
+    name: 'Prowlarr',
+    id: 'prowlarr',
+    requiresService: false,
+    supportedServices: ['realdebrid', 'alldebrid', 'premiumize', 'debridlink', 'torbox'],
+    options: [
+      { id: 'prowlarrUrl', label: 'Prowlarr URL', type: 'text', secret: true, required: true },
+      { id: 'apiKey', label: 'API Key', type: 'text', secret: true, required: true },
+      { id: 'overrideName', label: 'Override Addon Name', type: 'text', required: false },
+      {
+        id: 'indexerTimeout',
+        label: 'Override Indexer Timeout',
+        type: 'number',
+        required: false,
+        constraints: { min: Settings.MIN_TIMEOUT, max: Settings.MAX_TIMEOUT },
+      },
+    ],
+  },
+  {
     name: 'Orion Stremio Addon',
     id: 'orion-stremio-addon',
     requiresService: false,

@@ -80,6 +80,7 @@ It currently supports:
 - Orion Stremio Addon
 - Easynews
 - Easynews+
+- Prowlarr
 - [Stremio GDrive](https://github.com/Viren070/stremio-gdrive-addon)
 - Custom: You can input an addon URL and name and it will parse as much information as it can.
 
